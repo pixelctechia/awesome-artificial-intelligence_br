@@ -1,85 +1,85 @@
 # Awesome Artificial Intelligence
 
-A curated collection of **must-use, actively maintained resources** for building and shipping AI systems.  
+Uma colecao curada de **recursos indispensaveis e ativamente mantidos** para construir e colocar sistemas de IA em producao.
 
-Focus: **AI engineering** (RAG, agents, evals, guardrails, deploy) plus the best books, guides, papers, and a *carefully selected* set of tools.
+Foco: **engenharia de IA** (RAG, agents, evals, guardrails, deploy), alem dos melhores livros, guias, artigos e um conjunto de ferramentas *cuidadosamente selecionado*.
 
 ![](https://media.giphy.com/media/jeAQYN9FfROX6/giphy.gif)
 
 ---
 
-## 🏛 Core Resources (Evergreen)
+## 🏛 Recursos Essenciais
 
-_The foundations — these will still be valuable five years from now, even if today’s tools are gone._
+_Os fundamentos - estes recursos continuarao valiosos daqui a cinco anos, mesmo que as ferramentas de hoje desaparecam._
 
-### 📚 Books
-**Modern & Practical**
-- [Designing Machine Learning Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/) — Scalable, maintainable ML pipelines (Chip Huyen).
+### 📚 Livros
+**Modernos e Praticos**
+- [Designing Machine Learning Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/) — Pipelines de ML escalaveis e de facil manutencao (Chip Huyen).
 - [Generative Deep Learning (2nd Edition)](https://www.oreilly.com/library/view/generative-deep-learning/9781098134174/) — GANs, VAEs, diffusion models (David Foster).
-- [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) — End-to-end AI product building (Chip Huyen).
-- [100 Page Language Models Book](https://www.thelmbook.com/) — This book guides you through the evolution of language models, starting from machine learning fundamentals.
+- [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) — Desenvolvimento de produtos de IA de ponta a ponta (Chip Huyen).
+- [100 Page Language Models Book](https://www.thelmbook.com/) — Este livro guia voce pela evolucao dos language models, comecando pelos fundamentos de machine learning.
 
-**Foundational**
-- [Artificial Intelligence: A Modern Approach](https://aima.cs.berkeley.edu/) — Comprehensive AI theory (Russell & Norvig).
-- [Deep Learning](https://www.deeplearningbook.org/) — Neural networks & architectures (Goodfellow, Bengio, Courville).
-- [Reinforcement Learning: An Introduction (2nd Edition)](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf) — RL fundamentals (Sutton & Barto).
+**Fundamentais**
+- [Artificial Intelligence: A Modern Approach](https://aima.cs.berkeley.edu/) — Teoria de IA abrangente (Russell & Norvig).
+- [Deep Learning](https://www.deeplearningbook.org/) — Redes neurais e arquiteturas (Goodfellow, Bengio, Courville).
+- [Reinforcement Learning: An Introduction (2nd Edition)](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf) — Fundamentos de RL (Sutton & Barto).
 
 ---
 
-### 🏗 AI Engineering
-_Frameworks and design patterns for building robust, production-grade AI systems._  
-_Personal note: you don't need tons of frameworks — start with simple LLM calls and work up._
+### 🏗 Engenharia de IA
+_Frameworks e padroes de design para construir sistemas de IA robustos e prontos para producao._
+_Nota pessoal: voce nao precisa de um monte de frameworks - comece com chamadas simples para LLM e evolua a partir disso._
 
-#### 📖 Guides & Playbooks
-- **[Building Effective Agents (Anthropic)](https://www.anthropic.com/engineering/building-effective-agents)** — ⭐ Patterns, pitfalls, and tradeoffs for designing AI agents.
-- [OpenAI Agents Guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) — Practical guide on building agents
-- [Google AI Agents Paper](https://www.kaggle.com/whitepaper-agents) - Practical guide to building AI agents from Google
-- [Google Agents Companion Paper](https://www.kaggle.com/whitepaper-agent-companion) - Guide from Google
-- [OpenAI Cookbook](https://cookbook.openai.com/) — Example code, recipes, and best practices for working with OpenAI APIs.
-- [LLM Engineer Handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook) — A goldmine of useful links for AI engineers
+#### 📖 Guias e Playbooks
+- **[Building Effective Agents (Anthropic)](https://www.anthropic.com/engineering/building-effective-agents)** — ⭐ Padroes, armadilhas e tradeoffs para projetar agentes de IA.
+- [OpenAI Agents Guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) — Guia pratico para construir agentes
+- [Google AI Agents Paper](https://www.kaggle.com/whitepaper-agents) - Guia pratico do Google para construir agentes de IA
+- [Google Agents Companion Paper](https://www.kaggle.com/whitepaper-agent-companion) - Guia complementar do Google
+- [OpenAI Cookbook](https://cookbook.openai.com/) — Codigo de exemplo, receitas e boas praticas para trabalhar com as APIs da OpenAI.
+- [LLM Engineer Handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook) — Uma mina de ouro de links uteis para engenheiros de IA
 
-#### 🤖 Frameworks 
-- [PocketFlow](https://the-pocket.github.io/PocketFlow/) — Extremely minimalist AI agent framework in just 100 lines of code. Fantastic way to learn.
-- [Google ADK](https://google.github.io/adk-docs/) — Google's Agent Development Kit (Python, Java). Great local development experience + A2A + MCP.
-- [Pydantic-AI](https://ai.pydantic.dev/) — Typed, structured LLM orchestration framework built on Pydantic models for safe, predictable outputs.
-- [LangGraph](https://www.langchain.com/langgraph) — Build multi-agent workflows with stateful graphs on top of LangChain.
-- [CrewAI](https://www.crewai.com/) — Agent orchestration with structured tasks and human-in-the-loop controls.
-- [AutoGen](https://microsoft.github.io/autogen/) — Microsoft’s framework for multi-agent conversation and collaboration.
+#### 🤖 Frameworks
+- [PocketFlow](https://the-pocket.github.io/PocketFlow/) — Framework extremamente minimalista para agentes de IA em apenas 100 linhas de codigo. Excelente para aprender.
+- [Google ADK](https://google.github.io/adk-docs/) — Agent Development Kit do Google (Python, Java). Excelente experiencia de desenvolvimento local + A2A + MCP.
+- [Pydantic-AI](https://ai.pydantic.dev/) — Framework tipado e estruturado de orquestracao de LLM, construido sobre modelos Pydantic para saidas seguras e previsiveis.
+- [LangGraph](https://www.langchain.com/langgraph) — Construa fluxos multi-agent com grafos com estado sobre o LangChain.
+- [CrewAI](https://www.crewai.com/) — Orquestracao de agents com tarefas estruturadas e controles human-in-the-loop.
+- [AutoGen](https://microsoft.github.io/autogen/) — Framework da Microsoft para conversa e colaboracao multi-agent.
 
 #### 📦 Retrieval-Augmented Generation (RAG)
-- [LlamaIndex](https://www.llamaindex.ai/) — Data framework for ingesting, indexing, and querying private data with LLMs.
-- [Haystack](https://haystack.deepset.ai/) — Open-source search/RAG framework with modular pipelines.
-- [Docling](https://github.com/docling-project/docling) — Great library for ingesting any kind of document for RAG ⭐
+- [LlamaIndex](https://www.llamaindex.ai/) — Framework de dados para ingestao, indexacao e consulta de dados privados com LLMs.
+- [Haystack](https://haystack.deepset.ai/) — Framework open-source de busca/RAG com pipelines modulares.
+- [Docling](https://github.com/docling-project/docling) — Excelente biblioteca para ingerir qualquer tipo de documento para RAG ⭐
 
-#### Evals 
+#### Avaliacoes
 
-- [OpenAI Evals](https://github.com/openai/evals) — OpenAI's framework for writing evals
-
----
-
-### 📄 Landmark Papers
-_Research that shaped modern AI — worth reading to understand the "why" behind today’s architectures._
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — Transformer architecture.
-- [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361) — Model/data/compute scaling.
-- [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — GPT-3 capabilities.
-- [Constitutional AI](https://arxiv.org/abs/2212.08073) — Safer model alignment.
+- [OpenAI Evals](https://github.com/openai/evals) — Framework da OpenAI para escrever avaliacoes
 
 ---
 
-## 🎓 Courses
-_Learn from the best — structured content for every level._
+### 📄 Artigos Fundamentais
+_Pesquisas que moldaram a IA moderna - vale a pena ler para entender o "por que" por tras das arquiteturas atuais._
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — Arquitetura Transformer.
+- [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361) — Escalabilidade de modelo/dados/compute.
+- [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — Capacidades do GPT-3.
+- [Constitutional AI](https://arxiv.org/abs/2212.08073) — Alinhamento de modelos mais seguro.
 
-**Beginner**
+---
+
+## 🎓 Cursos
+_Aprenda com os melhores - conteudo estruturado para todos os niveis._
+
+**Iniciante**
 - [Google Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
 - [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/chapter1/1)
 - [Fast.ai — Practical Deep Learning](https://course.fast.ai/)
 
-**Intermediate / Advanced**
+**Intermediario / Avancado**
 - [Stanford CS324: Large Language Models](https://stanford-cs324.github.io/winter2022/)
 - [Full Stack Deep Learning](https://fullstackdeeplearning.com/)
 - [MIT 6.S191: Intro to Deep Learning](https://introtodeeplearning.com/)
 
-**Focused**
+**Focados**
 - [DeepLearning.AI Short Courses](https://learn.deeplearning.ai/)
 - [Google Deepmind| Introduction to Reinforcement Learning](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ)
 - [Karpathy’s LLM Zero-to-Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
@@ -88,48 +88,48 @@ _Learn from the best — structured content for every level._
 ---
 
 ## 📰 Newsletters
-_Stay current with AI developments without drowning in noise._
+_Acompanhe as novidades de IA sem se perder no ruido._
 - [The Rundown AI](https://www.therundown.ai/)
 - [AlphaSignal](https://alphasignal.ai/)
 - [Superhuman AI](https://www.superhuman.ai/)
 - [AI Engineer](https://newsletter.owainlewis.com)
 
-## ⚡ Tools
+## ⚡ Ferramentas
 
-Tools for building and deploying AI applications. 
+Ferramentas para construir e colocar aplicacoes de IA em producao.
 
-### 💬 Models
-- [ChatGPT](https://openai.com/chatgpt/overview/) — Best for general coding + reasoning.
-- [Claude](https://www.anthropic.com/claude) — Best for long-context analysis and structured thinking.
-- [Gemini](https://gemini.google.com/) — Best for Google ecosystem integration.
-- [Perplexity](https://www.perplexity.ai/) — Best for quick research with live citations.
-- [Cohere](https://cohere.com/) — Best for enterprise LLMs with strong retrieval-augmented generation APIs.
-- [Mistral](https://mistral.ai/) — Best for lightweight, high-performance open-weight models.
-- [Qwen](https://qwenlm.github.io/) — Best for multilingual and Chinese-first applications.
-- [DeepSeek](https://deepseek.com/) — Best for efficient, cost-optimized large models with competitive reasoning.
-  
-### 👨‍💻 Code & Developer Tools
-- [Claude Code](https://www.anthropic.com/claude) — IDE extensions with long-context code edits.
-- [GitHub Copilot](https://github.com/features/copilot) — In-IDE code completion, chat, and refactors.
-- [Cursor](https://cursor.sh/) — LLM-powered IDE for multi-file edits and codebase-aware chat.
-  
-### 🎨 Multimedia AI Tools
+### 💬 Modelos
+- [ChatGPT](https://openai.com/chatgpt/overview/) — Melhor para programacao geral e raciocinio.
+- [Claude](https://www.anthropic.com/claude) — Melhor para analise com contexto longo e pensamento estruturado.
+- [Gemini](https://gemini.google.com/) — Melhor para integracao com o ecossistema Google.
+- [Perplexity](https://www.perplexity.ai/) — Melhor para pesquisa rapida com citacoes em tempo real.
+- [Cohere](https://cohere.com/) — Melhor para LLMs corporativos com APIs fortes de retrieval-augmented generation.
+- [Mistral](https://mistral.ai/) — Melhor para modelos open-weight leves e de alto desempenho.
+- [Qwen](https://qwenlm.github.io/) — Melhor para aplicacoes multilingues e focadas primeiro em chines.
+- [DeepSeek](https://deepseek.com/) — Melhor para modelos grandes eficientes, com custo otimizado e raciocinio competitivo.
 
-#### 🖼 Image
-- [ChatGPT-4o Image Generation](https://openai.com/chatgpt) — Integrated image creation with style control.
-- [Midjourney](https://www.midjourney.com/) — Artistic and photorealistic images and video.
-- [Adobe Firefly](https://www.adobe.com/sensei/generative-ai/firefly.html) — Integrated into Creative Cloud.
-- [Ideogram](https://ideogram.ai/) — Precise, legible text in generated images.
-- [Flux](https://blackforestlabs.ai/) — High-res, prompt-editable images.
+### 👨‍💻 Ferramentas de Codigo e Desenvolvimento
+- [Claude Code](https://www.anthropic.com/claude) — Extensoes para IDE com edicoes de codigo de contexto longo.
+- [GitHub Copilot](https://github.com/features/copilot) — Autocompletar codigo, chat e refatoracoes dentro da IDE.
+- [Cursor](https://cursor.sh/) — IDE com suporte a LLM para edicoes em varios arquivos e chat com conhecimento da codebase.
+
+### 🎨 Ferramentas de IA para Multimidia
+
+#### 🖼 Imagem
+- [ChatGPT-4o Image Generation](https://openai.com/chatgpt) — Criacao de imagem integrada com controle de estilo.
+- [Midjourney](https://www.midjourney.com/) — Imagens e video artisticos e fotorrealistas.
+- [Adobe Firefly](https://www.adobe.com/sensei/generative-ai/firefly.html) — Integrado ao Creative Cloud.
+- [Ideogram](https://ideogram.ai/) — Texto preciso e legivel em imagens geradas.
+- [Flux](https://blackforestlabs.ai/) — Imagens em alta resolucao com prompts editaveis.
 
 #### 🎥 Video
-- [Kling](https://klingai.com/) — Cinematic, realistic video generation.
-- [Google Veo 3](https://deepmind.google/technologies/veo/) — High-quality video with synchronized audio.
-- [Runway](https://runwayml.com/) — Video editing + generation.
+- [Kling](https://klingai.com/) — Geracao de video cinematografica e realista.
+- [Google Veo 3](https://deepmind.google/technologies/veo/) — Video de alta qualidade com audio sincronizado.
+- [Runway](https://runwayml.com/) — Edicao e geracao de video.
 
 #### 🎙 Audio
-- [ElevenLabs](https://elevenlabs.io/) — High-quality text-to-speech.
-- [Suno](https://suno.ai/) — AI music from text prompts.
-- [Aiva](https://www.aiva.ai/) — Music composition for media.
+- [ElevenLabs](https://elevenlabs.io/) — Text-to-speech de alta qualidade.
+- [Suno](https://suno.ai/) — Musica com IA a partir de prompts em texto.
+- [Aiva](https://www.aiva.ai/) — Composicao musical para midia.
 
 ---

@@ -1,4 +1,4 @@
-# Awesome Artificial Intelligence
+# Inteligencia Artificial Incrivel
 
 Uma colecao curada de **recursos indispensaveis e ativamente mantidos** para construir e colocar sistemas de IA em producao.
 
